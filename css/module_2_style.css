@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 140px 64px 50px;
+  padding: 45px 40px 45px 32px;
+  border-radius: 30px;
+  width: 412px;
+  height: 416px;
+  background: radial-gradient(98.96% 98.96% at 50% 0%, rgb(35, 42, 52) 0%, rgb(24, 30, 39) 100%);
+}
+.wrapper img {
+  margin: 0 auto;
+}
+.wrapper div {
+  margin: 0 auto;
+  padding: 6px 0px 0px 20px;
+  border-radius: 22px;
+  width: 193px;
+  height: 32px;
+  background: #262e38;
+}
+.wrapper div p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #fc7614;
+}
+.wrapper h1 {
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 28px;
+  color: #fff;
+}
+.wrapper p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  text-align: center;
+  color: #969fad;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    width: 327px;
+    height: 360px;
+    padding: 34px 24px 37px 24px;
+    grid-template-rows: 120px 56px 47px;
+  }
+  .wrapper img {
+    width: 144px;
+    height: 96px;
+  }
+  .wrapper div {
+    width: 168px;
+    height: 32px;
+    padding: 7px 12px;
+  }
+  .wrapper div p {
+    font-size: 14px;
+    line-height: 157%;
+  }
+  .wrapper h1 {
+    font-size: 24px;
+  }
+  .wrapper p {
+    font-size: 14px;
+    line-height: 157%;
+  }
+}
